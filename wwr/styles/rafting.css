@@ -23,14 +23,38 @@ header, main, footer {
     margin: 0 auto;
 }
 
+header {
+    display: grid;
+    grid-template-columns: auto 1fr auto auto;
+    align-items: center;
+    padding: 1rem;
+    background-color: var(--secondary-color);
+}
+
+header img {
+    height: 90px;
+    width: auto;
+}
+
 h1, h2 {
     font-family: var(--heading-font);
     color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+
 }
 
 nav, p, section, article {
     margin: 16px;
     padding: 8px;
+}
+
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
 }
 
 .socialmedia a {
@@ -53,20 +77,62 @@ h1 {
     width: 100%;
     padding: 16px;
     text-align: center;
-    opacity: 0.7;
-    background-color: var(--accent1-color);
+    opacity: 0.8;
+    background-color: var(--accent2-color);
     color: #fff;
+}
+
+section div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+section div figure {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+section div figure img {
+    height: 78px;
+    width: auto;
+}
+
+section div figure figcaption {
+    font-size: x-small;
+    color: var(--accent2-color);
 }
 
 article {
     position: absolute;
+    top: 130px;
+    width: auto;
     background-color: var(--primary-color);
+    opacity: 0.9;
     padding: 10px;
 }
 
 .hero article img {
     float: right;
     width: 125px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    color: var(--accent2-color);
+    background-color: var(--secondary-color);
+    font-size: smaller;
+}
+
+footer div {
+    display: flex;
+    justify-content: space-evenly;
 }
 
 footer img {
