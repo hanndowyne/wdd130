@@ -1,8 +1,8 @@
 :root {
-    --primary-color: #0E4D64;
-    --secondary-color: #3DA5D9;
-    --accent1-color: #F2AA4C;
-    --accent2-color: #F28D35;
+    --primary-color: #F4F4F4;
+    --secondary-color: #87CEEB;
+    --accent1-color: #222222;
+    --accent2-color: #FFFFFF;
     --heading-font: "Montserrat", sans-serif;
     --body-font: "Open Sans", sans-serif;
 }
@@ -23,6 +23,10 @@ header, main, footer {
     margin: 0 auto;
 }
 
+main {
+    background-color: var(--primary-color);
+}
+
 header {
     display: grid;
     grid-template-columns: auto 1fr auto auto;
@@ -38,7 +42,7 @@ header img {
 
 h1, h2 {
     font-family: var(--heading-font);
-    color: var(--primary-color);
+    color: var(--accent1-color);
     display: flex;
     justify-content: center;
 
@@ -71,7 +75,14 @@ nav {
     height: auto;
 }
 
-h1 {
+#contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#title {
     position: absolute;
     top: 20px;
     width: 100%;
@@ -88,7 +99,7 @@ h1 {
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 6px;
-    background-color: #f9f9f9;
+    background-color: var(--secondary-color);
 }
 
 iframe {
@@ -119,7 +130,7 @@ section div figure img {
 
 section div figure figcaption {
     font-size: x-small;
-    color: var(--accent2-color);
+    color: var(--accent1-color);
 }
 
 article {
@@ -140,8 +151,16 @@ footer {
     display: flex;
     justify-content: space-between;
     color: var(--accent2-color);
-    background-color: var(--secondary-color);
+    background-color: var(--accent1-color);
     font-size: smaller;
+}
+
+#wireframe {
+    color: var(--accent2-color);
+}
+
+a {
+    color: var(--accent1-color);
 }
 
 footer div {
