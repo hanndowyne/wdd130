@@ -90,7 +90,7 @@ nav {
     text-align: center;
     opacity: 0.8;
     background-color: var(--accent2-color);
-    color: #fff;
+    color: var(--accent1-color);
 }
 
 .form {
@@ -173,4 +173,72 @@ footer img {
     height: auto;
     position: relative;
     margin: 15px;
+}
+
+#summer_trips {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+    align-items: start;
+}
+
+#summer_trips figure {
+    text-align: center;
+}
+
+#summer_trips img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 1%;
+}
+
+.container {
+    text-align: center;
+}
+
+#contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+}
+
+#offering {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    align-items: start;
+}
+
+#offering figure {
+    text-align: center;
+}
+
+#offering img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 1%;
+}
+
+table {
+    width: 100%;
+    margin: 20px;
+    font: var(--body-font);
+    font-size: 16px;
+}
+
+thead {
+    background-color: var(--secondary-color);
+    color: var(--accent1-color);
+}
+
+th, td {
+    padding: 12px 15px;
+    border: 1px solid black;
+    text-align: left;
+    vertical-align:  top;
+}
+
+tbody {
+    background-color: white;
 }
